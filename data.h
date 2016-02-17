@@ -14,7 +14,7 @@ class Member {
 	string memberAddress;
 	string memberPhone;
 	char memberGender;
-	//vector<booking> bookingHistory;
+	vector<Booking> bookingHistory;
 	public:
 		Member(string, string, string, char); //memberName, memberAddress, memberPhone, memberGender
 		//accessors
@@ -24,7 +24,7 @@ class Member {
 		string getMemAddress();
 		string getMemPhone(); 
 		char getMemGender();
-		//booking getBookingInfo(bookingID);
+		Booking getBookingInfo(bookingID);
 		
 		//mutators
 		void setMemID(string);
@@ -33,7 +33,7 @@ class Member {
 		void setMemAddress(string);
 		void setMemPhone(string); 
 		char setMemGender(char);
-		//void setBookingInfo(booking oldBook, booking newBook);
+		void setBookingInfo(Booking oldBook, Booking newBook);
 		
 };
 
@@ -47,7 +47,7 @@ class Facilities{
 		int facilityStatus; 
 		string facilityPhone;
 		string facilityType; 
-		//vector<booking> bookingHistory
+		vector<Booking> bookingHistory
 	public: 
 		
 	
@@ -65,7 +65,7 @@ class Booking{
 		int bookingStatus;
 		
 	public: 
-		//Booking(string memberID, string facilityID, date startDate, date endDate, time startTime, time endTime, int bookingStatus);
+		Booking(string memberID, string facilityID, date startDate, date endDate, time startTime, time endTime, int bookingStatus);
 		
 };
 
