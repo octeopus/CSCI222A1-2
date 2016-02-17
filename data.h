@@ -2,20 +2,9 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-#include <ctime>
+#include <ctime> //use ctime to get time and date
 
 using namespace std;
-
-struct Date{
-	int day; 
-	int month; 
-	int year;
-};
-
-struct Time{
-	//we're going 2359 on this shit 
-	int 
-};
 
 class Member {
 	private: 
@@ -69,6 +58,31 @@ class Booking{
 		string memberID; 
 		string facilityID; 
 		string bookingID; 
+		//date startDate
+		//date endDate
+		//time startTime
+		//time endTime 
+		int bookingStatus;
+		
+	public: 
+		//Booking(string memberID, string facilityID, date startDate, date endDate, time startTime, time endTime, int bookingStatus);
+		
+};
+
+class Manager{
+	private:
+		string managerID;
+		string managerName;
+		string managerPassword;
+		string managerAddress; 
+		string managerPhone; 
+		
+		//accessors
+		string getMgrID();
+		string getMgrName();
+		string getMgrPassword();
+		string getMgrAddress();
+		string getMgrPhone();
 		
 };
 
