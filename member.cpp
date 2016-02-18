@@ -33,7 +33,7 @@ void membersystem()	//member login system
     			 << "2)\tSearch Facilities\n" 
     			 << "9)\tQuit\n" << endl;
     		cout << "---------------------------------------------------------\n" << endl;
-    		
+    		cout << "WTF!!" << endl;
 			cout << "Please enter your option: ";
     		cin >> MAoption;
     		cin.clear();
