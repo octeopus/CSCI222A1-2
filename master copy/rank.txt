@@ -1,0 +1,5 @@
+Basic 1 1 11.11 1
+Bronze 2 2 22.22 2
+Silver 3 3 33.33 3
+Gold 4 4 42.42 4
+GRPB10 9 9 0 9
